@@ -49,7 +49,42 @@ Desktop/
 
 ## 🚀 빠른 시작
 
-### 1. 현재 모델 실행 테스트
+### 방법 1: 실행 파일 사용 (권장)
+
+```bash
+# 1. 저장소 다운로드
+git clone https://github.com/jeongsuho/safetymodel.git
+cd safetymodel
+
+# 2. 패키지 설치
+pip install -r requirements.txt
+
+# 3. 실행 파일 빌드
+python build_exe.py
+
+# 4. 프로그램 실행
+dist/SafetyPredictionSystem.exe
+```
+
+**생성 파일**:
+- `dist/SafetyPredictionSystem.exe` (약 50-100MB)
+- Python 설치 없이도 실행 가능!
+
+### 방법 2: Python 직접 실행
+
+```bash
+# 1. 저장소 다운로드
+git clone https://github.com/jeongsuho/safetymodel.git
+cd safetymodel
+
+# 2. 패키지 설치
+pip install -r requirements.txt
+
+# 3. GUI 프로그램 실행
+python main.py
+```
+
+### 방법 3: 원본 모델 테스트
 
 #### ML 시스템 실행
 ```bash
@@ -65,18 +100,6 @@ venv\Scripts\activate
 python integrated_safety_system.py
 ```
 **출력**: `안전예측결과_정수호_복합적층장갑_2025.xlsx`
-
-### 2. 개발 환경 확인
-```bash
-# Python 버전 확인
-python --version  # 3.8 이상 필요
-
-# GPU 확인
-nvidia-smi  # CUDA 11.8+ 필요
-
-# PyTorch GPU 확인
-python -c "import torch; print(torch.cuda.is_available())"  # True 필요
-```
 
 ---
 
