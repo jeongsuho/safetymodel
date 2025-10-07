@@ -1,0 +1,22 @@
+# 육군 안전 예측 시스템 - 의존성 패키지
+# 기본 GUI 및 데이터 처리
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+
+# ML/DL 모델 (실제 사용 시)
+scikit-learn>=1.3.0
+joblib>=1.3.0
+
+# PyTorch (GPU 지원)
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# 패키징 도구
+pyinstaller>=5.10.0
+
+# 선택 사항 (고급 기능)
+transformers>=4.30.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
